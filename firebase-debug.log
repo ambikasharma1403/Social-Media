@@ -1,0 +1,56 @@
+[debug] [2020-04-17T23:45:39.765Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T23:45:39.768Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-04-17T23:45:39.769Z] CLI Version:   8.1.0
+[debug] [2020-04-17T23:45:39.769Z] Platform:      win32
+[debug] [2020-04-17T23:45:39.769Z] Node Version:  v12.5.0
+[debug] [2020-04-17T23:45:39.770Z] Time:          Sat Apr 18 2020 05:15:39 GMT+0530 (India Standard Time)
+[debug] [2020-04-17T23:45:39.770Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T23:45:39.770Z] 
+[debug] [2020-04-17T23:45:39.891Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-17T23:45:39.893Z] > authorizing via signed-in user
+[debug] [2020-04-17T23:45:39.893Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-04-17T23:45:39.899Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-17T23:45:39.900Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-17T23:45:40.199Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 23:45:41 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-17T23:45:40.241Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-04-17T23:45:42.127Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 23:45:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1643","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-17T23:45:42.128Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-04-17T23:45:42.673Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 23:45:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-04-17T23:45:42.683Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-04-17T23:45:43.780Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 23:45:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-04-17T23:45:44.766Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-17T23:45:44.766Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-17T23:45:44.766Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-17T23:45:44.767Z] [worker-~diagnostic~-6f844be7-a5f2-4155-93fa-4f4776184229]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\20284 
+[debug] [2020-04-17T23:45:44.768Z] [worker-~diagnostic~-6f844be7-a5f2-4155-93fa-4f4776184229]: BUSY 
+[debug] [2020-04-17T23:45:45.486Z] [runtime-status] [20284] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"} 
+[debug] [2020-04-17T23:45:45.488Z] [runtime-status] [20284] Disabled runtime features: undefined 
+[debug] [2020-04-17T23:45:45.510Z] [runtime-status] [20284] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-17T23:45:45.521Z] [runtime-status] [20284] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-17T23:45:45.525Z] [runtime-status] [20284] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-17T23:45:46.306Z] [runtime-status] [20284] Checked functions.config() {"config":{}} 
+[debug] [2020-04-17T23:45:46.307Z] [runtime-status] [20284] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-17T23:45:46.311Z] [runtime-status] [20284] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-17T23:45:46.312Z] [runtime-status] [20284] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-17T23:45:46.312Z] [runtime-status] [20284] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-17T23:45:47.820Z] [runtime-status] [20284] initializeApp(DEFAULT) {"databaseURL":"https://socmed-d27e7.firebaseio.com","storageBucket":"socmed-d27e7.appspot.com","projectId":"socmed-d27e7","credential":{"implicit":false,"projectId":"socmed-d27e7","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzCHTkAFGN+zt1\nxZSers8Jrn5sM4Yn1bbhI76HnVe2J2WI7ojppvSzFhM1P1l970xUHzEmZHHKRMJC\nc48+/FxMnSTO4nsiyoHMSghrPWwbi+UAkGh/rRv5TQQA3KlFILwZ/mTM6AQJQLWs\nfgB4aUpnb0TuQx9JlTkD8nt7UZYu/23m3orMRWXsKPIg45XrL5XLaaLNL5jQM0ow\nk7HVJI3F8pq4JQA3vYXkDmoSBLjxOrE76tNBSvTUAUOgP0xL8Ux/qMMtZHe4mR2e\nhrIRewXFxnOwy+1uVMVJeueqlqrb37Tmqwiq7RoEekiqrrDmYyfaaviYnxkkpWZb\nMnTF584hAgMBAAECggEAUT+vPKHgYRz4+RO3xOP0VaJ5AUXIxl845afBGe6QFbx/\nWctXGyKHvpZwFSQwyvREoZCeT5wZ//+AYYPsKFuCz8opIDKsSze3/CxE8dYoL8An\nJ0BiDD9ViKgo/vMlZpfahblrqYpJ+qEBUczFDeBKwfI/SBnyIwSzoVT0MRzvmVfU\nCc2gkV8nAn8BxKTIxoyytJGBhfCsb7BcCd6zCxk4hWiXULOFbK7YxK/px2cvi6r6\nUEVBTw9uARERb+2/qSJqRdwMmj04XPZ1lZ/L5ocTPnkwUNdlQUCVSONp2TH885nk\nKxFT/CTivES1v3Flu6d4ZX9sbsf11Jzd9ed+IhVhuQKBgQDWVo+bog0jpfoNJFS9\n6eLvGj2wf6vnx0rx9AINSFNxd2VY44s9HT2P5y4pFK7FrVf0FfPxKT4JaGnLgM6H\nQ3/w3WbIyJU5oNUaN3RUJxBMePYjd+EgBFitA054AgRm1NiNCFZ+h2vGbuewl8q/\ncY+eQIt0IaNBVr8lLVFm0cw71wKBgQDV1R5REtg295Sl+9SIr3cXgaPYn4p0JKsH\nOODtBpdo/jN+T9Vkjv1OUgxsPSRzJVwIrPusKFRIW7XiH1gfKV+3zI0vaaGVfYgv\n/O5f/vIVyAhtMcaMIVcNgJO8PdMGtlFwb/z+ZOnhj7CiMdmNdtjodohpXfenkFD/\nhAJQIWvGxwKBgEUGES8sa5DMVY8/4O5b0JHxYGZjZwe4HUF3s+V1IjILIh8S//cJ\nYJbj+vCN0Y6lOQrIuwsxneHHtzIq49eZfC0kD4KfXbb2PUo5C4RCJDSMS6+2XlBC\nNhBZXT62X5aB+s7IHZqXn7SCaKhs6YTnXDm5TW9zmbBj8CBXzLwQ2fV3AoGAFLmj\nRphc/HbioXPXFahsEosuJkDQWpFzQi/xHQgWhMaelw+Fz0lMo9qv+Y2zirWERhL+\nEaGXCaxZ5KDFGcAY1uesh3vlfWe9W2lYcVV0gUfyCSNZ6xsQJO7hYs1bNrtVCWDR\nVJbTVFlo9U9/loZ+X4mdjxjceBE0yI8y6jFTEOECgYEAwA94mLMpZJ4XhWguPLZh\nBIX0hew8IelN2ouSG1f2LaXQWeXz9dJuVXBNRfcVrIKHpJFpzFBr3GvPMjHlqXh7\nJXT5/6iRkyhYesU2ihDaGGA0SPHjw9NX87Q6H9OiYMkWBF3VNJHGh1Gw3/H+1yv/\nwk8w5ZCuCDm8hcXLBVdZhDw=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-3lzh0@socmed-d27e7.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production.
+[info] +  functions[api]: http function initialized (http://localhost:5001/socmed-d27e7/us-central1/api).
+[info] i  functions[createNotificationOnLike]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[createNotificationOnComment]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[deleteNotificationOnUnlike]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[onUserImageChange]: function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions[onScreamDelete]: function ignored because the firestore emulator does not exist or is not running.
+[debug] [2020-04-17T23:45:55.698Z] [worker-~diagnostic~-6f844be7-a5f2-4155-93fa-4f4776184229]: IDLE 
