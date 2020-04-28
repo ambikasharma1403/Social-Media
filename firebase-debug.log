@@ -1,0 +1,1782 @@
+[debug] [2020-02-29T01:43:16.377Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:43:16.380Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-29T01:43:16.380Z] CLI Version:   7.14.0
+[debug] [2020-02-29T01:43:16.380Z] Platform:      win32
+[debug] [2020-02-29T01:43:16.380Z] Node Version:  v12.5.0
+[debug] [2020-02-29T01:43:16.382Z] Time:          Sat Feb 29 2020 07:13:16 GMT+0530 (India Standard Time)
+[debug] [2020-02-29T01:43:16.382Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:43:16.382Z] 
+[debug] [2020-02-29T01:43:16.395Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-29T01:43:16.396Z] > authorizing via signed-in user
+[debug] [2020-02-29T01:43:16.396Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-02-29T01:43:16.399Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-29T01:43:16.400Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-29T01:43:16.643Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T01:43:16.670Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+
+[debug] [2020-02-29T01:43:18.485Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T01:43:18.487Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-02-29T01:43:18.963Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-02-29T01:43:18.974Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-02-29T01:43:19.988Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-02-29T01:43:21.012Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:43:21.012Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:43:21.013Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:43:21.013Z] [worker-~diagnostic~-c50d797f-a126-4b6a-9242-4dbb7cbeceac]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\27900
+[debug] [2020-02-29T01:43:21.013Z] [worker-~diagnostic~-c50d797f-a126-4b6a-9242-4dbb7cbeceac]: BUSY
+[debug] [2020-02-29T01:43:21.539Z] [runtime-status] [27900] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:43:21.540Z] [runtime-status] [27900] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:43:21.544Z] [runtime-status] [27900] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:43:21.546Z] [runtime-status] [27900] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:43:21.547Z] [runtime-status] [27900] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:43:22.580Z] [worker-~diagnostic~-c50d797f-a126-4b6a-9242-4dbb7cbeceac]: exited
+[debug] [2020-02-29T01:43:22.580Z] [worker-~diagnostic~-c50d797f-a126-4b6a-9242-4dbb7cbeceac]: FINISHED
+[debug] [2020-02-29T01:43:54.045Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:43:54.048Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-29T01:43:54.048Z] CLI Version:   7.14.0
+[debug] [2020-02-29T01:43:54.048Z] Platform:      win32
+[debug] [2020-02-29T01:43:54.048Z] Node Version:  v12.5.0
+[debug] [2020-02-29T01:43:54.050Z] Time:          Sat Feb 29 2020 07:13:54 GMT+0530 (India Standard Time)
+[debug] [2020-02-29T01:43:54.050Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:43:54.050Z] 
+[debug] [2020-02-29T01:43:54.061Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-29T01:43:54.062Z] > authorizing via signed-in user
+[debug] [2020-02-29T01:43:54.062Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-02-29T01:43:54.064Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+
+[debug] [2020-02-29T01:43:55.795Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T01:43:55.798Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-02-29T01:43:56.199Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-02-29T01:43:56.211Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-02-29T01:43:57.110Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-02-29T01:43:58.248Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:43:58.248Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:43:58.248Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:43:58.249Z] [worker-~diagnostic~-257fbe32-87f4-4392-8f8b-2a6ba838b6e3]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\42896
+[debug] [2020-02-29T01:43:58.249Z] [worker-~diagnostic~-257fbe32-87f4-4392-8f8b-2a6ba838b6e3]: BUSY
+[debug] [2020-02-29T01:43:58.792Z] [runtime-status] [42896] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:43:58.793Z] [runtime-status] [42896] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:43:58.797Z] [runtime-status] [42896] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:43:58.800Z] [runtime-status] [42896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:43:58.801Z] [runtime-status] [42896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:43:59.831Z] [worker-~diagnostic~-257fbe32-87f4-4392-8f8b-2a6ba838b6e3]: exited
+[debug] [2020-02-29T01:43:59.831Z] [worker-~diagnostic~-257fbe32-87f4-4392-8f8b-2a6ba838b6e3]: FINISHED
+[debug] [2020-02-29T01:47:58.655Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:47:59.660Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:47:59.668Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:47:59.668Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:47:59.668Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:47:59.668Z] [worker-~diagnostic~-e5d03899-d9dc-4b84-b0e4-a5c01df703e6]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\39960
+[debug] [2020-02-29T01:47:59.668Z] [worker-~diagnostic~-e5d03899-d9dc-4b84-b0e4-a5c01df703e6]: BUSY
+[debug] [2020-02-29T01:48:00.268Z] [runtime-status] [39960] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:48:00.270Z] [runtime-status] [39960] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:48:00.275Z] [runtime-status] [39960] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:48:00.278Z] [runtime-status] [39960] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:48:00.280Z] [runtime-status] [39960] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:48:01.423Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:48:01.561Z] [worker-~diagnostic~-e5d03899-d9dc-4b84-b0e4-a5c01df703e6]: exited
+[debug] [2020-02-29T01:48:01.561Z] [worker-~diagnostic~-e5d03899-d9dc-4b84-b0e4-a5c01df703e6]: FINISHED
+[debug] [2020-02-29T01:48:02.423Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:48:02.432Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:48:02.432Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:48:02.432Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:48:02.432Z] [worker-~diagnostic~-9eba182b-ebcf-43d9-99a8-ca093ed17b3f]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\37780
+[debug] [2020-02-29T01:48:02.433Z] [worker-~diagnostic~-9eba182b-ebcf-43d9-99a8-ca093ed17b3f]: BUSY
+[debug] [2020-02-29T01:48:03.038Z] [runtime-status] [37780] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:48:03.040Z] [runtime-status] [37780] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:48:03.044Z] [runtime-status] [37780] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:48:03.047Z] [runtime-status] [37780] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:48:03.048Z] [runtime-status] [37780] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:48:04.074Z] [worker-~diagnostic~-9eba182b-ebcf-43d9-99a8-ca093ed17b3f]: exited
+[debug] [2020-02-29T01:48:04.074Z] [worker-~diagnostic~-9eba182b-ebcf-43d9-99a8-ca093ed17b3f]: FINISHED
+[debug] [2020-02-29T01:48:12.172Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:48:12.175Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-29T01:48:12.175Z] CLI Version:   7.14.0
+[debug] [2020-02-29T01:48:12.175Z] Platform:      win32
+[debug] [2020-02-29T01:48:12.175Z] Node Version:  v12.5.0
+[debug] [2020-02-29T01:48:12.176Z] Time:          Sat Feb 29 2020 07:18:12 GMT+0530 (India Standard Time)
+[debug] [2020-02-29T01:48:12.176Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:48:12.176Z] 
+[debug] [2020-02-29T01:48:12.186Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-29T01:48:12.187Z] > authorizing via signed-in user
+[debug] [2020-02-29T01:48:12.187Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-02-29T01:48:12.189Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+
+[debug] [2020-02-29T01:48:13.898Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T01:48:13.900Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-02-29T01:48:14.317Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-02-29T01:48:14.328Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-02-29T01:48:15.350Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-02-29T01:48:16.370Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:48:16.371Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:48:16.371Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:48:16.372Z] [worker-~diagnostic~-5a7f2bfd-e6f5-4ac8-b15c-4155123eed97]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\40208
+[debug] [2020-02-29T01:48:16.372Z] [worker-~diagnostic~-5a7f2bfd-e6f5-4ac8-b15c-4155123eed97]: BUSY
+[debug] [2020-02-29T01:48:16.929Z] [runtime-status] [40208] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:48:16.930Z] [runtime-status] [40208] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:48:16.934Z] [runtime-status] [40208] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:48:16.936Z] [runtime-status] [40208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:48:16.938Z] [runtime-status] [40208] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:48:17.946Z] [worker-~diagnostic~-5a7f2bfd-e6f5-4ac8-b15c-4155123eed97]: exited
+[debug] [2020-02-29T01:48:17.947Z] [worker-~diagnostic~-5a7f2bfd-e6f5-4ac8-b15c-4155123eed97]: FINISHED
+[debug] [2020-02-29T01:51:59.687Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:51:59.690Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-29T01:51:59.690Z] CLI Version:   7.14.0
+[debug] [2020-02-29T01:51:59.690Z] Platform:      win32
+[debug] [2020-02-29T01:51:59.690Z] Node Version:  v12.5.0
+[debug] [2020-02-29T01:51:59.691Z] Time:          Sat Feb 29 2020 07:21:59 GMT+0530 (India Standard Time)
+[debug] [2020-02-29T01:51:59.692Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:51:59.692Z] 
+[debug] [2020-02-29T01:51:59.702Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-29T01:51:59.703Z] > authorizing via signed-in user
+[debug] [2020-02-29T01:51:59.703Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-02-29T01:51:59.705Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+
+[debug] [2020-02-29T01:52:01.526Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T01:52:01.528Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-02-29T01:52:01.996Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-02-29T01:52:02.006Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-02-29T01:52:02.964Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-02-29T01:52:04.044Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:52:04.045Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:52:04.045Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:52:04.046Z] [worker-~diagnostic~-aa6818bb-85f7-4653-8657-77260c91c373]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\43432
+[debug] [2020-02-29T01:52:04.046Z] [worker-~diagnostic~-aa6818bb-85f7-4653-8657-77260c91c373]: BUSY
+[debug] [2020-02-29T01:52:04.590Z] [runtime-status] [43432] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:52:04.591Z] [runtime-status] [43432] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:52:04.595Z] [runtime-status] [43432] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:52:04.597Z] [runtime-status] [43432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:52:04.598Z] [runtime-status] [43432] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:52:05.629Z] [worker-~diagnostic~-aa6818bb-85f7-4653-8657-77260c91c373]: exited
+[debug] [2020-02-29T01:52:05.629Z] [worker-~diagnostic~-aa6818bb-85f7-4653-8657-77260c91c373]: FINISHED
+[debug] [2020-02-29T01:56:59.508Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:00.509Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:57:00.516Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:00.516Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:00.516Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:00.516Z] [worker-~diagnostic~-aa9ab72c-7574-4053-a90d-3abf813e13e7]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\9268
+[debug] [2020-02-29T01:57:00.516Z] [worker-~diagnostic~-aa9ab72c-7574-4053-a90d-3abf813e13e7]: BUSY
+[debug] [2020-02-29T01:57:01.457Z] [runtime-status] [9268] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:01.459Z] [runtime-status] [9268] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:01.464Z] [runtime-status] [9268] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:01.468Z] [runtime-status] [9268] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:01.469Z] [runtime-status] [9268] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:02.542Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:02.840Z] [worker-~diagnostic~-aa9ab72c-7574-4053-a90d-3abf813e13e7]: exited
+[debug] [2020-02-29T01:57:02.840Z] [worker-~diagnostic~-aa9ab72c-7574-4053-a90d-3abf813e13e7]: FINISHED
+[debug] [2020-02-29T01:57:03.543Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:57:03.547Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:03.547Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:03.547Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:03.548Z] [worker-~diagnostic~-a7c1118d-2a8e-41cf-93b5-616c14cca55d]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\27136
+[debug] [2020-02-29T01:57:03.548Z] [worker-~diagnostic~-a7c1118d-2a8e-41cf-93b5-616c14cca55d]: BUSY
+[debug] [2020-02-29T01:57:04.132Z] [runtime-status] [27136] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:04.135Z] [runtime-status] [27136] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:04.141Z] [runtime-status] [27136] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:04.145Z] [runtime-status] [27136] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:04.147Z] [runtime-status] [27136] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:05.350Z] [worker-~diagnostic~-a7c1118d-2a8e-41cf-93b5-616c14cca55d]: exited
+[debug] [2020-02-29T01:57:05.350Z] [worker-~diagnostic~-a7c1118d-2a8e-41cf-93b5-616c14cca55d]: FINISHED
+[debug] [2020-02-29T01:57:07.781Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:08.782Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:57:08.788Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:08.788Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:08.788Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:08.788Z] [worker-~diagnostic~-f97e5933-b6ca-4763-9646-2a82ab5622db]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\44252
+[debug] [2020-02-29T01:57:08.788Z] [worker-~diagnostic~-f97e5933-b6ca-4763-9646-2a82ab5622db]: BUSY
+[debug] [2020-02-29T01:57:09.113Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:09.468Z] [runtime-status] [44252] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:09.470Z] [runtime-status] [44252] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:09.476Z] [runtime-status] [44252] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:09.479Z] [runtime-status] [44252] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:09.481Z] [runtime-status] [44252] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:10.115Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T01:57:10.115Z] [worker-~diagnostic~-f97e5933-b6ca-4763-9646-2a82ab5622db]: FINISHING
+[debug] [2020-02-29T01:57:10.122Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:10.122Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T01:57:10.122Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:10.122Z] [worker-~diagnostic~-7f87f7a3-7f27-4007-9224-e69142a23348]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\21952
+[debug] [2020-02-29T01:57:10.122Z] [worker-~diagnostic~-7f87f7a3-7f27-4007-9224-e69142a23348]: BUSY
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:10.774Z] [runtime-status] [21952] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:10.777Z] [runtime-status] [21952] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:10.783Z] [runtime-status] [21952] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:10.788Z] [runtime-status] [21952] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:10.790Z] [runtime-status] [21952] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:10.793Z] [worker-~diagnostic~-f97e5933-b6ca-4763-9646-2a82ab5622db]: exited
+[debug] [2020-02-29T01:57:10.794Z] [worker-~diagnostic~-f97e5933-b6ca-4763-9646-2a82ab5622db]: FINISHED
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:11.986Z] [worker-~diagnostic~-7f87f7a3-7f27-4007-9224-e69142a23348]: exited
+[debug] [2020-02-29T01:57:11.986Z] [worker-~diagnostic~-7f87f7a3-7f27-4007-9224-e69142a23348]: FINISHED
+[debug] [2020-02-29T01:57:15.063Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:16.066Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-02-29T01:57:16.072Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:16.072Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:16.073Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:16.073Z] [worker-~diagnostic~-9a9c4034-1da4-41a8-aa2b-54f607603056]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\41172
+[debug] [2020-02-29T01:57:16.073Z] [worker-~diagnostic~-9a9c4034-1da4-41a8-aa2b-54f607603056]: BUSY
+[debug] [2020-02-29T01:57:16.681Z] [runtime-status] [41172] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:16.683Z] [runtime-status] [41172] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:16.687Z] [runtime-status] [41172] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:16.689Z] [runtime-status] [41172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:16.690Z] [runtime-status] [41172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:16.744Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:17.744Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T01:57:17.745Z] [worker-~diagnostic~-9a9c4034-1da4-41a8-aa2b-54f607603056]: FINISHING
+[debug] [2020-02-29T01:57:17.749Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:17.750Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T01:57:17.750Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:17.750Z] [worker-~diagnostic~-cea96253-6b77-4a06-940b-15d43b56b78b]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\30648
+[debug] [2020-02-29T01:57:17.750Z] [worker-~diagnostic~-cea96253-6b77-4a06-940b-15d43b56b78b]: BUSY
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:17.799Z] [worker-~diagnostic~-9a9c4034-1da4-41a8-aa2b-54f607603056]: exited
+[debug] [2020-02-29T01:57:17.799Z] [worker-~diagnostic~-9a9c4034-1da4-41a8-aa2b-54f607603056]: FINISHED
+[debug] [2020-02-29T01:57:18.298Z] [runtime-status] [30648] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:18.300Z] [runtime-status] [30648] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:18.304Z] [runtime-status] [30648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:18.306Z] [runtime-status] [30648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:18.307Z] [runtime-status] [30648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:18.666Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:19.380Z] [worker-~diagnostic~-cea96253-6b77-4a06-940b-15d43b56b78b]: exited
+[debug] [2020-02-29T01:57:19.380Z] [worker-~diagnostic~-cea96253-6b77-4a06-940b-15d43b56b78b]: FINISHED
+[debug] [2020-02-29T01:57:19.667Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-02-29T01:57:19.672Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:19.672Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:19.672Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:19.672Z] [worker-~diagnostic~-b4cb4f52-94b7-4e61-8312-517dc63a84df]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\44864
+[debug] [2020-02-29T01:57:19.672Z] [worker-~diagnostic~-b4cb4f52-94b7-4e61-8312-517dc63a84df]: BUSY
+[debug] [2020-02-29T01:57:20.246Z] [runtime-status] [44864] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:20.248Z] [runtime-status] [44864] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:20.252Z] [runtime-status] [44864] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:20.254Z] [runtime-status] [44864] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:20.255Z] [runtime-status] [44864] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:20.445Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[warn] !  TypeError: Cannot read property 'length' of undefined
+    at pathtoRegexp (C:\Users\ambik\socmed\functions\node_modules\path-to-regexp\index.js:63:49)
+    at new Layer (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\layer.js:45:17)
+    at Function.route (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\index.js:494:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:481:30)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:21.336Z] [worker-~diagnostic~-b4cb4f52-94b7-4e61-8312-517dc63a84df]: exited
+[debug] [2020-02-29T01:57:21.336Z] [worker-~diagnostic~-b4cb4f52-94b7-4e61-8312-517dc63a84df]: FINISHED
+[debug] [2020-02-29T01:57:21.447Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:57:21.452Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:21.452Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:21.452Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:21.452Z] [worker-~diagnostic~-4911ab5a-bd7d-4b9f-b1e1-26d4f0bfce85]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\37064
+[debug] [2020-02-29T01:57:21.453Z] [worker-~diagnostic~-4911ab5a-bd7d-4b9f-b1e1-26d4f0bfce85]: BUSY
+[debug] [2020-02-29T01:57:22.004Z] [runtime-status] [37064] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:22.006Z] [runtime-status] [37064] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:22.010Z] [runtime-status] [37064] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:22.013Z] [runtime-status] [37064] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:22.014Z] [runtime-status] [37064] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:23.115Z] [worker-~diagnostic~-4911ab5a-bd7d-4b9f-b1e1-26d4f0bfce85]: exited
+[debug] [2020-02-29T01:57:23.116Z] [worker-~diagnostic~-4911ab5a-bd7d-4b9f-b1e1-26d4f0bfce85]: FINISHED
+[debug] [2020-02-29T01:57:25.551Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:26.552Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:57:26.558Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:26.558Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:26.558Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:26.558Z] [worker-~diagnostic~-c9b15b49-865c-4295-a302-e0dc41a33357]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\42796
+[debug] [2020-02-29T01:57:26.558Z] [worker-~diagnostic~-c9b15b49-865c-4295-a302-e0dc41a33357]: BUSY
+[debug] [2020-02-29T01:57:27.155Z] [runtime-status] [42796] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:27.157Z] [runtime-status] [42796] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:27.161Z] [runtime-status] [42796] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:27.163Z] [runtime-status] [42796] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:27.164Z] [runtime-status] [42796] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:28.378Z] [worker-~diagnostic~-c9b15b49-865c-4295-a302-e0dc41a33357]: exited
+[debug] [2020-02-29T01:57:28.378Z] [worker-~diagnostic~-c9b15b49-865c-4295-a302-e0dc41a33357]: FINISHED
+[debug] [2020-02-29T01:57:33.571Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:34.572Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:57:34.576Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:34.577Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:34.577Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:34.577Z] [worker-~diagnostic~-eeea2dd9-f2ae-4f1a-8f16-f8d3ee2b8fb1]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\40568
+[debug] [2020-02-29T01:57:34.577Z] [worker-~diagnostic~-eeea2dd9-f2ae-4f1a-8f16-f8d3ee2b8fb1]: BUSY
+[debug] [2020-02-29T01:57:35.109Z] [runtime-status] [40568] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:35.111Z] [runtime-status] [40568] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:35.115Z] [runtime-status] [40568] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:35.118Z] [runtime-status] [40568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:35.119Z] [runtime-status] [40568] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:36.149Z] [worker-~diagnostic~-eeea2dd9-f2ae-4f1a-8f16-f8d3ee2b8fb1]: exited
+[debug] [2020-02-29T01:57:36.150Z] [worker-~diagnostic~-eeea2dd9-f2ae-4f1a-8f16-f8d3ee2b8fb1]: FINISHED
+[debug] [2020-02-29T01:57:38.211Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:39.212Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:57:39.218Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:39.218Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:39.218Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:39.218Z] [worker-~diagnostic~-7dbf8587-fbb0-4ac5-8bfa-c41d919987a9]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\33896
+[debug] [2020-02-29T01:57:39.218Z] [worker-~diagnostic~-7dbf8587-fbb0-4ac5-8bfa-c41d919987a9]: BUSY
+[debug] [2020-02-29T01:57:39.730Z] [runtime-status] [33896] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:39.731Z] [runtime-status] [33896] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:39.735Z] [runtime-status] [33896] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:39.738Z] [runtime-status] [33896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:39.739Z] [runtime-status] [33896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:40.868Z] [worker-~diagnostic~-7dbf8587-fbb0-4ac5-8bfa-c41d919987a9]: exited
+[debug] [2020-02-29T01:57:40.868Z] [worker-~diagnostic~-7dbf8587-fbb0-4ac5-8bfa-c41d919987a9]: FINISHED
+[debug] [2020-02-29T01:57:41.532Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:42.534Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:57:42.538Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:42.538Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:42.538Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:42.538Z] [worker-~diagnostic~-6312235b-adc9-4ce5-8a66-aab086914b9b]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\20756
+[debug] [2020-02-29T01:57:42.538Z] [worker-~diagnostic~-6312235b-adc9-4ce5-8a66-aab086914b9b]: BUSY
+[debug] [2020-02-29T01:57:42.905Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:43.069Z] [runtime-status] [20756] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:43.071Z] [runtime-status] [20756] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:43.076Z] [runtime-status] [20756] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:43.079Z] [runtime-status] [20756] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:43.081Z] [runtime-status] [20756] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:43.907Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T01:57:43.907Z] [worker-~diagnostic~-6312235b-adc9-4ce5-8a66-aab086914b9b]: FINISHING
+[debug] [2020-02-29T01:57:43.914Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:43.914Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T01:57:43.914Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:43.914Z] [worker-~diagnostic~-66ad8014-d092-4f6d-9904-889bb1eff430]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\9752
+[debug] [2020-02-29T01:57:43.914Z] [worker-~diagnostic~-66ad8014-d092-4f6d-9904-889bb1eff430]: BUSY
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:44.297Z] [worker-~diagnostic~-6312235b-adc9-4ce5-8a66-aab086914b9b]: exited
+[debug] [2020-02-29T01:57:44.297Z] [worker-~diagnostic~-6312235b-adc9-4ce5-8a66-aab086914b9b]: FINISHED
+[debug] [2020-02-29T01:57:44.501Z] [runtime-status] [9752] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:44.503Z] [runtime-status] [9752] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:44.507Z] [runtime-status] [9752] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:44.510Z] [runtime-status] [9752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:44.511Z] [runtime-status] [9752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:44.574Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:45.575Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T01:57:45.576Z] [worker-~diagnostic~-66ad8014-d092-4f6d-9904-889bb1eff430]: FINISHING
+[debug] [2020-02-29T01:57:45.576Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-29T01:57:45.583Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:45.583Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T01:57:45.583Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:45.583Z] [worker-~diagnostic~-942dec50-468e-490e-a2d4-b430476d82ab]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\42276
+[debug] [2020-02-29T01:57:45.583Z] [worker-~diagnostic~-942dec50-468e-490e-a2d4-b430476d82ab]: BUSY
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:45.640Z] [worker-~diagnostic~-66ad8014-d092-4f6d-9904-889bb1eff430]: exited
+[debug] [2020-02-29T01:57:45.640Z] [worker-~diagnostic~-66ad8014-d092-4f6d-9904-889bb1eff430]: FINISHED
+[debug] [2020-02-29T01:57:46.152Z] [runtime-status] [42276] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:46.153Z] [runtime-status] [42276] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:46.157Z] [runtime-status] [42276] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:46.160Z] [runtime-status] [42276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:46.161Z] [runtime-status] [42276] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:46.217Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:47.219Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T01:57:47.219Z] [worker-~diagnostic~-942dec50-468e-490e-a2d4-b430476d82ab]: FINISHING
+[debug] [2020-02-29T01:57:47.219Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-29T01:57:47.223Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:47.223Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T01:57:47.223Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:47.223Z] [worker-~diagnostic~-ac22adf8-0589-46c7-83c3-49e35f37f090]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\19764
+[debug] [2020-02-29T01:57:47.223Z] [worker-~diagnostic~-ac22adf8-0589-46c7-83c3-49e35f37f090]: BUSY
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:47.385Z] [worker-~diagnostic~-942dec50-468e-490e-a2d4-b430476d82ab]: exited
+[debug] [2020-02-29T01:57:47.386Z] [worker-~diagnostic~-942dec50-468e-490e-a2d4-b430476d82ab]: FINISHED
+[debug] [2020-02-29T01:57:47.788Z] [runtime-status] [19764] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:47.789Z] [runtime-status] [19764] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:47.793Z] [runtime-status] [19764] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:47.796Z] [runtime-status] [19764] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:47.797Z] [runtime-status] [19764] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:48.912Z] [worker-~diagnostic~-ac22adf8-0589-46c7-83c3-49e35f37f090]: exited
+[debug] [2020-02-29T01:57:48.913Z] [worker-~diagnostic~-ac22adf8-0589-46c7-83c3-49e35f37f090]: FINISHED
+[debug] [2020-02-29T01:57:51.740Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:57:52.741Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-02-29T01:57:52.746Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:52.746Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:52.746Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:52.746Z] [worker-~diagnostic~-95904aea-b83e-4a52-98a6-55f514fec160]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\35364
+[debug] [2020-02-29T01:57:52.746Z] [worker-~diagnostic~-95904aea-b83e-4a52-98a6-55f514fec160]: BUSY
+[debug] [2020-02-29T01:57:53.326Z] [runtime-status] [35364] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:53.328Z] [runtime-status] [35364] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:53.334Z] [runtime-status] [35364] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:53.338Z] [runtime-status] [35364] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:53.339Z] [runtime-status] [35364] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:54.194Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:54.453Z] [worker-~diagnostic~-95904aea-b83e-4a52-98a6-55f514fec160]: exited
+[debug] [2020-02-29T01:57:54.453Z] [worker-~diagnostic~-95904aea-b83e-4a52-98a6-55f514fec160]: FINISHED
+[debug] [2020-02-29T01:57:55.195Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:57:55.200Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:57:55.200Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:57:55.200Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:57:55.200Z] [worker-~diagnostic~-f744b1dd-a051-4e4b-808e-f22038951d83]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\37924
+[debug] [2020-02-29T01:57:55.200Z] [worker-~diagnostic~-f744b1dd-a051-4e4b-808e-f22038951d83]: BUSY
+[debug] [2020-02-29T01:57:55.779Z] [runtime-status] [37924] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:57:55.780Z] [runtime-status] [37924] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:57:55.785Z] [runtime-status] [37924] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:57:55.787Z] [runtime-status] [37924] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:57:55.788Z] [runtime-status] [37924] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:57:56.826Z] [worker-~diagnostic~-f744b1dd-a051-4e4b-808e-f22038951d83]: exited
+[debug] [2020-02-29T01:57:56.826Z] [worker-~diagnostic~-f744b1dd-a051-4e4b-808e-f22038951d83]: FINISHED
+[debug] [2020-02-29T01:58:04.646Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:58:05.648Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:58:05.653Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:58:05.653Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:58:05.654Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:58:05.654Z] [worker-~diagnostic~-e9976ec3-517b-4405-a5df-18c964fa90c6]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\4076
+[debug] [2020-02-29T01:58:05.654Z] [worker-~diagnostic~-e9976ec3-517b-4405-a5df-18c964fa90c6]: BUSY
+[debug] [2020-02-29T01:58:06.218Z] [runtime-status] [4076] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:58:06.219Z] [runtime-status] [4076] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:58:06.223Z] [runtime-status] [4076] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:58:06.226Z] [runtime-status] [4076] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:58:06.227Z] [runtime-status] [4076] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  ReferenceError: f is not defined
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:35)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:58:07.401Z] [worker-~diagnostic~-e9976ec3-517b-4405-a5df-18c964fa90c6]: exited
+[debug] [2020-02-29T01:58:07.401Z] [worker-~diagnostic~-e9976ec3-517b-4405-a5df-18c964fa90c6]: FINISHED
+[debug] [2020-02-29T01:58:08.500Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:58:09.501Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:58:09.505Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:58:09.505Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:58:09.505Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:58:09.506Z] [worker-~diagnostic~-ad67bceb-2289-4604-87ec-f5176522b2c4]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\41292
+[debug] [2020-02-29T01:58:09.506Z] [worker-~diagnostic~-ad67bceb-2289-4604-87ec-f5176522b2c4]: BUSY
+[debug] [2020-02-29T01:58:10.068Z] [runtime-status] [41292] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:58:10.070Z] [runtime-status] [41292] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:58:10.074Z] [runtime-status] [41292] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:58:10.076Z] [runtime-status] [41292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:58:10.078Z] [runtime-status] [41292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:14:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:58:11.110Z] [worker-~diagnostic~-ad67bceb-2289-4604-87ec-f5176522b2c4]: exited
+[debug] [2020-02-29T01:58:11.110Z] [worker-~diagnostic~-ad67bceb-2289-4604-87ec-f5176522b2c4]: FINISHED
+[debug] [2020-02-29T01:58:14.097Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:58:15.099Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:58:15.104Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:58:15.104Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:58:15.104Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:58:15.105Z] [worker-~diagnostic~-2b4a2095-acad-4860-a37e-81c4352c1f8f]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\38040
+[debug] [2020-02-29T01:58:15.105Z] [worker-~diagnostic~-2b4a2095-acad-4860-a37e-81c4352c1f8f]: BUSY
+[debug] [2020-02-29T01:58:15.586Z] [runtime-status] [38040] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:58:15.587Z] [runtime-status] [38040] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:58:15.591Z] [runtime-status] [38040] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:58:15.593Z] [runtime-status] [38040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:58:15.595Z] [runtime-status] [38040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:58:15.676Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[warn] !  ReferenceError: li is not defined
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:43)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:5:58)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:58:16.660Z] [worker-~diagnostic~-2b4a2095-acad-4860-a37e-81c4352c1f8f]: exited
+[debug] [2020-02-29T01:58:16.660Z] [worker-~diagnostic~-2b4a2095-acad-4860-a37e-81c4352c1f8f]: FINISHED
+[debug] [2020-02-29T01:58:16.676Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:58:16.681Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:58:16.681Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:58:16.681Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:58:16.681Z] [worker-~diagnostic~-4bdfcb79-32d6-4cfd-8677-c4d3667074fb]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\30036
+[debug] [2020-02-29T01:58:16.681Z] [worker-~diagnostic~-4bdfcb79-32d6-4cfd-8677-c4d3667074fb]: BUSY
+[debug] [2020-02-29T01:58:17.207Z] [runtime-status] [30036] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:58:17.208Z] [runtime-status] [30036] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:58:17.212Z] [runtime-status] [30036] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:58:17.215Z] [runtime-status] [30036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:58:17.216Z] [runtime-status] [30036] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:58:18.244Z] [worker-~diagnostic~-4bdfcb79-32d6-4cfd-8677-c4d3667074fb]: exited
+[debug] [2020-02-29T01:58:18.245Z] [worker-~diagnostic~-4bdfcb79-32d6-4cfd-8677-c4d3667074fb]: FINISHED
+[debug] [2020-02-29T01:58:19.025Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:58:20.027Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:58:20.032Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:58:20.032Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:58:20.033Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:58:20.033Z] [worker-~diagnostic~-4534ae04-3391-4cb4-913b-66e9abe542ed]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\31472
+[debug] [2020-02-29T01:58:20.033Z] [worker-~diagnostic~-4534ae04-3391-4cb4-913b-66e9abe542ed]: BUSY
+[debug] [2020-02-29T01:58:20.559Z] [runtime-status] [31472] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:58:20.561Z] [runtime-status] [31472] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:58:20.565Z] [runtime-status] [31472] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:58:20.568Z] [runtime-status] [31472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:58:20.569Z] [runtime-status] [31472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:58:21.567Z] [worker-~diagnostic~-4534ae04-3391-4cb4-913b-66e9abe542ed]: exited
+[debug] [2020-02-29T01:58:21.567Z] [worker-~diagnostic~-4534ae04-3391-4cb4-913b-66e9abe542ed]: FINISHED
+[debug] [2020-02-29T01:58:43.788Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:58:43.791Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-29T01:58:43.791Z] CLI Version:   7.14.0
+[debug] [2020-02-29T01:58:43.791Z] Platform:      win32
+[debug] [2020-02-29T01:58:43.791Z] Node Version:  v12.5.0
+[debug] [2020-02-29T01:58:43.792Z] Time:          Sat Feb 29 2020 07:28:43 GMT+0530 (India Standard Time)
+[debug] [2020-02-29T01:58:43.792Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T01:58:43.792Z] 
+[debug] [2020-02-29T01:58:43.803Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-29T01:58:43.804Z] > authorizing via signed-in user
+[debug] [2020-02-29T01:58:43.804Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-02-29T01:58:43.806Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+
+[debug] [2020-02-29T01:58:45.618Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T01:58:45.620Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-02-29T01:58:46.135Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-02-29T01:58:46.145Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-02-29T01:58:47.155Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-02-29T01:58:48.183Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:58:48.183Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:58:48.183Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:58:48.184Z] [worker-~diagnostic~-bdf2b3e2-c0af-433a-9ad0-d5b4e6781660]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\34024
+[debug] [2020-02-29T01:58:48.185Z] [worker-~diagnostic~-bdf2b3e2-c0af-433a-9ad0-d5b4e6781660]: BUSY
+[debug] [2020-02-29T01:58:48.667Z] [runtime-status] [34024] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:58:48.668Z] [runtime-status] [34024] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:58:48.672Z] [runtime-status] [34024] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:58:48.675Z] [runtime-status] [34024] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:58:48.676Z] [runtime-status] [34024] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:58:49.716Z] [worker-~diagnostic~-bdf2b3e2-c0af-433a-9ad0-d5b4e6781660]: exited
+[debug] [2020-02-29T01:58:49.716Z] [worker-~diagnostic~-bdf2b3e2-c0af-433a-9ad0-d5b4e6781660]: FINISHED
+[debug] [2020-02-29T01:59:43.962Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:59:44.964Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:59:44.971Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:59:44.971Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:59:44.971Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:59:44.971Z] [worker-~diagnostic~-4326f8cc-464b-4352-aa64-c3560752c97b]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\39240
+[debug] [2020-02-29T01:59:44.971Z] [worker-~diagnostic~-4326f8cc-464b-4352-aa64-c3560752c97b]: BUSY
+[debug] [2020-02-29T01:59:45.477Z] [runtime-status] [39240] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:59:45.479Z] [runtime-status] [39240] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:59:45.483Z] [runtime-status] [39240] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:59:45.485Z] [runtime-status] [39240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:59:45.486Z] [runtime-status] [39240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:59:46.565Z] [worker-~diagnostic~-4326f8cc-464b-4352-aa64-c3560752c97b]: exited
+[debug] [2020-02-29T01:59:46.565Z] [worker-~diagnostic~-4326f8cc-464b-4352-aa64-c3560752c97b]: FINISHED
+[debug] [2020-02-29T01:59:47.297Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:59:48.299Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T01:59:48.304Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:59:48.304Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T01:59:48.304Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:59:48.304Z] [worker-~diagnostic~-e95e504e-93ca-4b2e-b67f-16c372ff8834]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\39392
+[debug] [2020-02-29T01:59:48.304Z] [worker-~diagnostic~-e95e504e-93ca-4b2e-b67f-16c372ff8834]: BUSY
+[debug] [2020-02-29T01:59:48.462Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:59:48.985Z] [runtime-status] [39392] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:59:48.987Z] [runtime-status] [39392] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:59:48.991Z] [runtime-status] [39392] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:59:48.995Z] [runtime-status] [39392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:59:48.997Z] [runtime-status] [39392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:59:49.463Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T01:59:49.463Z] [worker-~diagnostic~-e95e504e-93ca-4b2e-b67f-16c372ff8834]: FINISHING
+[debug] [2020-02-29T01:59:49.468Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:59:49.468Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T01:59:49.468Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:59:49.468Z] [worker-~diagnostic~-bb7b55f7-22f5-447b-8cc2-9bf47ab35b81]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\43344
+[debug] [2020-02-29T01:59:49.468Z] [worker-~diagnostic~-bb7b55f7-22f5-447b-8cc2-9bf47ab35b81]: BUSY
+[debug] [2020-02-29T01:59:49.851Z] File C:\Users\ambik\socmed\functions\index.js changed, reloading triggers
+[debug] [2020-02-29T01:59:50.227Z] [runtime-status] [43344] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:59:50.230Z] [runtime-status] [43344] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:59:50.237Z] [runtime-status] [43344] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:59:50.241Z] [runtime-status] [43344] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:59:50.243Z] [runtime-status] [43344] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:59:50.631Z] [worker-~diagnostic~-e95e504e-93ca-4b2e-b67f-16c372ff8834]: exited
+[debug] [2020-02-29T01:59:50.631Z] [worker-~diagnostic~-e95e504e-93ca-4b2e-b67f-16c372ff8834]: FINISHED
+[debug] [2020-02-29T01:59:50.851Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T01:59:50.851Z] [worker-~diagnostic~-bb7b55f7-22f5-447b-8cc2-9bf47ab35b81]: FINISHING
+[debug] [2020-02-29T01:59:50.851Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-02-29T01:59:50.856Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T01:59:50.856Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T01:59:50.857Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T01:59:50.857Z] [worker-~diagnostic~-b8bbeef0-af8e-4601-8eb5-0c9e14f78433]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\42472
+[debug] [2020-02-29T01:59:50.857Z] [worker-~diagnostic~-b8bbeef0-af8e-4601-8eb5-0c9e14f78433]: BUSY
+[debug] [2020-02-29T01:59:51.597Z] [runtime-status] [42472] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T01:59:51.599Z] [runtime-status] [42472] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T01:59:51.603Z] [runtime-status] [42472] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T01:59:51.605Z] [runtime-status] [42472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T01:59:51.607Z] [runtime-status] [42472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T01:59:51.767Z] [worker-~diagnostic~-bb7b55f7-22f5-447b-8cc2-9bf47ab35b81]: exited
+[debug] [2020-02-29T01:59:51.767Z] [worker-~diagnostic~-bb7b55f7-22f5-447b-8cc2-9bf47ab35b81]: FINISHED
+[debug] [2020-02-29T02:00:02.546Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T02:00:02.548Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-29T02:00:02.549Z] CLI Version:   7.14.0
+[debug] [2020-02-29T02:00:02.549Z] Platform:      win32
+[debug] [2020-02-29T02:00:02.549Z] Node Version:  v12.5.0
+[debug] [2020-02-29T02:00:02.550Z] Time:          Sat Feb 29 2020 07:30:02 GMT+0530 (India Standard Time)
+[debug] [2020-02-29T02:00:02.550Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T02:00:02.550Z] 
+[debug] [2020-02-29T02:00:02.561Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-29T02:00:02.561Z] > authorizing via signed-in user
+[debug] [2020-02-29T02:00:02.562Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-02-29T02:00:02.564Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+
+[debug] [2020-02-29T02:00:04.291Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T02:00:04.293Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-02-29T02:00:04.643Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-02-29T02:00:04.653Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-02-29T02:00:05.582Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-02-29T02:00:06.689Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:00:06.690Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:00:06.690Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:00:06.690Z] [worker-~diagnostic~-5aedd0d7-ce1e-46cd-9698-e1f714c2fe34]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\20936
+[debug] [2020-02-29T02:00:06.690Z] [worker-~diagnostic~-5aedd0d7-ce1e-46cd-9698-e1f714c2fe34]: BUSY
+[debug] [2020-02-29T02:00:07.233Z] [runtime-status] [20936] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:00:07.234Z] [runtime-status] [20936] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:00:07.238Z] [runtime-status] [20936] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:00:07.241Z] [runtime-status] [20936] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:00:07.242Z] [runtime-status] [20936] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:00:08.259Z] [worker-~diagnostic~-5aedd0d7-ce1e-46cd-9698-e1f714c2fe34]: exited
+[debug] [2020-02-29T02:00:08.259Z] [worker-~diagnostic~-5aedd0d7-ce1e-46cd-9698-e1f714c2fe34]: FINISHED
+[debug] [2020-02-29T02:05:46.748Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:05:47.751Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T02:05:47.759Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:05:47.759Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:05:47.759Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:05:47.759Z] [worker-~diagnostic~-8d45d82f-2a97-4dac-8ee7-11ce801282c7]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\27136
+[debug] [2020-02-29T02:05:47.759Z] [worker-~diagnostic~-8d45d82f-2a97-4dac-8ee7-11ce801282c7]: BUSY
+[debug] [2020-02-29T02:05:48.348Z] [runtime-status] [27136] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:05:48.350Z] [runtime-status] [27136] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:05:48.356Z] [runtime-status] [27136] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:05:48.362Z] [runtime-status] [27136] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:05:48.364Z] [runtime-status] [27136] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  ReferenceError: ex is not defined
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\handlers\screams.js:111:2)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:6:95)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:05:49.248Z] [worker-~diagnostic~-8d45d82f-2a97-4dac-8ee7-11ce801282c7]: exited
+[debug] [2020-02-29T02:05:49.248Z] [worker-~diagnostic~-8d45d82f-2a97-4dac-8ee7-11ce801282c7]: FINISHED
+[debug] [2020-02-29T02:05:51.462Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:05:52.464Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T02:05:52.469Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:05:52.469Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:05:52.469Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:05:52.469Z] [worker-~diagnostic~-97f679a5-f86c-4749-8a03-fa73214ab43f]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\40384
+[debug] [2020-02-29T02:05:52.469Z] [worker-~diagnostic~-97f679a5-f86c-4749-8a03-fa73214ab43f]: BUSY
+[debug] [2020-02-29T02:05:53.001Z] [runtime-status] [40384] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:05:53.003Z] [runtime-status] [40384] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:05:53.007Z] [runtime-status] [40384] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:05:53.010Z] [runtime-status] [40384] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:05:53.013Z] [runtime-status] [40384] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:05:54.189Z] [worker-~diagnostic~-97f679a5-f86c-4749-8a03-fa73214ab43f]: exited
+[debug] [2020-02-29T02:05:54.189Z] [worker-~diagnostic~-97f679a5-f86c-4749-8a03-fa73214ab43f]: FINISHED
+[debug] [2020-02-29T02:05:57.814Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:05:58.815Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T02:05:58.820Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:05:58.820Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:05:58.820Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:05:58.821Z] [worker-~diagnostic~-6cd882e3-cff6-46f5-9b46-4871ea618ff0]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\8896
+[debug] [2020-02-29T02:05:58.821Z] [worker-~diagnostic~-6cd882e3-cff6-46f5-9b46-4871ea618ff0]: BUSY
+[debug] [2020-02-29T02:05:59.403Z] [runtime-status] [8896] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:05:59.404Z] [runtime-status] [8896] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:05:59.409Z] [runtime-status] [8896] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:05:59.413Z] [runtime-status] [8896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:05:59.415Z] [runtime-status] [8896] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:00.420Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:00.621Z] [worker-~diagnostic~-6cd882e3-cff6-46f5-9b46-4871ea618ff0]: exited
+[debug] [2020-02-29T02:06:00.621Z] [worker-~diagnostic~-6cd882e3-cff6-46f5-9b46-4871ea618ff0]: FINISHED
+[debug] [2020-02-29T02:06:01.420Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T02:06:01.425Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:01.425Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:06:01.425Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:01.425Z] [worker-~diagnostic~-c0299b29-4a80-4444-93f9-05b9446d92f6]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\42108
+[debug] [2020-02-29T02:06:01.425Z] [worker-~diagnostic~-c0299b29-4a80-4444-93f9-05b9446d92f6]: BUSY
+[debug] [2020-02-29T02:06:01.655Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:06:01.944Z] [runtime-status] [42108] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:01.947Z] [runtime-status] [42108] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:06:01.952Z] [runtime-status] [42108] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:01.956Z] [runtime-status] [42108] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:01.957Z] [runtime-status] [42108] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:02.656Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T02:06:02.656Z] [worker-~diagnostic~-c0299b29-4a80-4444-93f9-05b9446d92f6]: FINISHING
+[debug] [2020-02-29T02:06:02.662Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:02.662Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T02:06:02.662Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:02.662Z] [worker-~diagnostic~-dbd6cd68-429d-4925-80bc-707d298acc06]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\36640
+[debug] [2020-02-29T02:06:02.662Z] [worker-~diagnostic~-dbd6cd68-429d-4925-80bc-707d298acc06]: BUSY
+[warn] !  C:\Users\ambik\socmed\functions\handlers\screams.js:111
+ exports.likeScream = 
+                      
+
+SyntaxError: Unexpected end of input
+    at Module._compile (internal/modules/cjs/loader.js:720:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:6:95)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:02.816Z] [worker-~diagnostic~-c0299b29-4a80-4444-93f9-05b9446d92f6]: exited
+[debug] [2020-02-29T02:06:02.817Z] [worker-~diagnostic~-c0299b29-4a80-4444-93f9-05b9446d92f6]: FINISHED
+[debug] [2020-02-29T02:06:03.316Z] [runtime-status] [36640] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:03.318Z] [runtime-status] [36640] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:06:03.322Z] [runtime-status] [36640] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:03.324Z] [runtime-status] [36640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:03.325Z] [runtime-status] [36640] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:03.785Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[warn] !  C:\Users\ambik\socmed\functions\handlers\screams.js:111
+ exports.likeScream = ()
+                       ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:720:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:6:95)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:04.129Z] [worker-~diagnostic~-dbd6cd68-429d-4925-80bc-707d298acc06]: exited
+[debug] [2020-02-29T02:06:04.129Z] [worker-~diagnostic~-dbd6cd68-429d-4925-80bc-707d298acc06]: FINISHED
+[debug] [2020-02-29T02:06:04.787Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-02-29T02:06:04.792Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:04.792Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:06:04.792Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:04.792Z] [worker-~diagnostic~-8f51ba9f-ffdb-4391-b45c-c34d76ae6aaa]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\44252
+[debug] [2020-02-29T02:06:04.793Z] [worker-~diagnostic~-8f51ba9f-ffdb-4391-b45c-c34d76ae6aaa]: BUSY
+[debug] [2020-02-29T02:06:05.428Z] [runtime-status] [44252] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:05.430Z] [runtime-status] [44252] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:06:05.435Z] [runtime-status] [44252] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:05.438Z] [runtime-status] [44252] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:05.439Z] [runtime-status] [44252] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  C:\Users\ambik\socmed\functions\handlers\screams.js:111
+ exports.likeScream = ()
+                       ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:720:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:6:95)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:06.313Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:06:06.337Z] [worker-~diagnostic~-8f51ba9f-ffdb-4391-b45c-c34d76ae6aaa]: exited
+[debug] [2020-02-29T02:06:06.337Z] [worker-~diagnostic~-8f51ba9f-ffdb-4391-b45c-c34d76ae6aaa]: FINISHED
+[debug] [2020-02-29T02:06:07.313Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T02:06:07.318Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:07.318Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:06:07.318Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:07.318Z] [worker-~diagnostic~-d5126760-9388-4f6d-9d05-a29813d12e53]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\35456
+[debug] [2020-02-29T02:06:07.318Z] [worker-~diagnostic~-d5126760-9388-4f6d-9d05-a29813d12e53]: BUSY
+[debug] [2020-02-29T02:06:07.893Z] [runtime-status] [35456] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:07.895Z] [runtime-status] [35456] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:06:07.899Z] [runtime-status] [35456] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:07.901Z] [runtime-status] [35456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:07.903Z] [runtime-status] [35456] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  ReferenceError: re is not defined
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\handlers\screams.js:111:24)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:6:95)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:08.823Z] [worker-~diagnostic~-d5126760-9388-4f6d-9d05-a29813d12e53]: exited
+[debug] [2020-02-29T02:06:08.823Z] [worker-~diagnostic~-d5126760-9388-4f6d-9d05-a29813d12e53]: FINISHED
+[debug] [2020-02-29T02:06:11.062Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:06:12.064Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T02:06:12.070Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:12.070Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:06:12.070Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:12.070Z] [worker-~diagnostic~-68954785-43b7-48bb-917a-8586794fa2ee]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\10392
+[debug] [2020-02-29T02:06:12.070Z] [worker-~diagnostic~-68954785-43b7-48bb-917a-8586794fa2ee]: BUSY
+[debug] [2020-02-29T02:06:13.033Z] [runtime-status] [10392] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:13.036Z] [runtime-status] [10392] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:06:13.042Z] [runtime-status] [10392] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:13.049Z] [runtime-status] [10392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:13.051Z] [runtime-status] [10392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\handlers\screams.js:111:24)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:6:95)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:14.378Z] [worker-~diagnostic~-68954785-43b7-48bb-917a-8586794fa2ee]: exited
+[debug] [2020-02-29T02:06:14.378Z] [worker-~diagnostic~-68954785-43b7-48bb-917a-8586794fa2ee]: FINISHED
+[debug] [2020-02-29T02:06:15.269Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:06:16.270Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T02:06:16.279Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:16.280Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:06:16.280Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:16.280Z] [worker-~diagnostic~-ad50b8fb-dae8-4e15-95ef-2ec229fb0657]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\35636
+[debug] [2020-02-29T02:06:16.280Z] [worker-~diagnostic~-ad50b8fb-dae8-4e15-95ef-2ec229fb0657]: BUSY
+[debug] [2020-02-29T02:06:16.982Z] [runtime-status] [35636] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:16.984Z] [runtime-status] [35636] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:06:16.988Z] [runtime-status] [35636] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:16.991Z] [runtime-status] [35636] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:16.992Z] [runtime-status] [35636] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:17.298Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:06:18.300Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T02:06:18.300Z] [worker-~diagnostic~-ad50b8fb-dae8-4e15-95ef-2ec229fb0657]: FINISHING
+[debug] [2020-02-29T02:06:18.307Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:18.307Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T02:06:18.308Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:18.308Z] [worker-~diagnostic~-aa5eb91b-e2c3-4296-8fc4-78d697ec4bfe]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\30688
+[debug] [2020-02-29T02:06:18.308Z] [worker-~diagnostic~-aa5eb91b-e2c3-4296-8fc4-78d697ec4bfe]: BUSY
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:18.363Z] [worker-~diagnostic~-ad50b8fb-dae8-4e15-95ef-2ec229fb0657]: exited
+[debug] [2020-02-29T02:06:18.363Z] [worker-~diagnostic~-ad50b8fb-dae8-4e15-95ef-2ec229fb0657]: FINISHED
+[debug] [2020-02-29T02:06:18.924Z] [runtime-status] [30688] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:18.928Z] [runtime-status] [30688] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:06:18.932Z] [runtime-status] [30688] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:18.935Z] [runtime-status] [30688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:18.936Z] [runtime-status] [30688] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:20.133Z] [worker-~diagnostic~-aa5eb91b-e2c3-4296-8fc4-78d697ec4bfe]: exited
+[debug] [2020-02-29T02:06:20.133Z] [worker-~diagnostic~-aa5eb91b-e2c3-4296-8fc4-78d697ec4bfe]: FINISHED
+[debug] [2020-02-29T02:06:28.211Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T02:06:28.214Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-29T02:06:28.214Z] CLI Version:   7.14.0
+[debug] [2020-02-29T02:06:28.214Z] Platform:      win32
+[debug] [2020-02-29T02:06:28.214Z] Node Version:  v12.5.0
+[debug] [2020-02-29T02:06:28.215Z] Time:          Sat Feb 29 2020 07:36:28 GMT+0530 (India Standard Time)
+[debug] [2020-02-29T02:06:28.215Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T02:06:28.215Z] 
+[debug] [2020-02-29T02:06:28.226Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-29T02:06:28.226Z] > authorizing via signed-in user
+[debug] [2020-02-29T02:06:28.227Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-02-29T02:06:28.229Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+
+[debug] [2020-02-29T02:06:30.085Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T02:06:30.088Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-02-29T02:06:30.635Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-02-29T02:06:30.644Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-02-29T02:06:31.547Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-02-29T02:06:32.679Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:32.680Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:06:32.680Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:32.680Z] [worker-~diagnostic~-4ddcdc1a-1bcf-42c5-a84d-f30c9fdce9dd]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\37216
+[debug] [2020-02-29T02:06:32.681Z] [worker-~diagnostic~-4ddcdc1a-1bcf-42c5-a84d-f30c9fdce9dd]: BUSY
+[debug] [2020-02-29T02:06:33.197Z] [runtime-status] [37216] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:33.198Z] [runtime-status] [37216] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:06:33.202Z] [runtime-status] [37216] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:33.205Z] [runtime-status] [37216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:33.206Z] [runtime-status] [37216] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:34.230Z] [worker-~diagnostic~-4ddcdc1a-1bcf-42c5-a84d-f30c9fdce9dd]: exited
+[debug] [2020-02-29T02:06:34.230Z] [worker-~diagnostic~-4ddcdc1a-1bcf-42c5-a84d-f30c9fdce9dd]: FINISHED
+[debug] [2020-02-29T02:06:53.547Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:06:54.548Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-29T02:06:54.554Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:54.554Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:06:54.554Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:54.554Z] [worker-~diagnostic~-bc4fd8b8-9c5b-410b-a3ec-e8135e526ff5]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\30472
+[debug] [2020-02-29T02:06:54.554Z] [worker-~diagnostic~-bc4fd8b8-9c5b-410b-a3ec-e8135e526ff5]: BUSY
+[debug] [2020-02-29T02:06:54.720Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:06:55.163Z] [runtime-status] [30472] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:55.165Z] [runtime-status] [30472] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:06:55.170Z] [runtime-status] [30472] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:55.175Z] [runtime-status] [30472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:55.178Z] [runtime-status] [30472] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:55.722Z] [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2020-02-29T02:06:55.722Z] [worker-~diagnostic~-bc4fd8b8-9c5b-410b-a3ec-e8135e526ff5]: FINISHING
+[debug] [2020-02-29T02:06:55.727Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:55.727Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-02-29T02:06:55.727Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:55.727Z] [worker-~diagnostic~-c6e00e3d-fcf0-47fe-94e9-4f74adb89d16]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\26228
+[debug] [2020-02-29T02:06:55.727Z] [worker-~diagnostic~-c6e00e3d-fcf0-47fe-94e9-4f74adb89d16]: BUSY
+[debug] [2020-02-29T02:06:56.337Z] [runtime-status] [26228] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:06:56.340Z] [runtime-status] [26228] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:56.349Z] [runtime-status] [26228] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:06:56.350Z] [runtime-status] [26228] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:56.352Z] [runtime-status] [26228] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:06:56.374Z] [worker-~diagnostic~-bc4fd8b8-9c5b-410b-a3ec-e8135e526ff5]: exited
+[debug] [2020-02-29T02:06:56.374Z] [worker-~diagnostic~-bc4fd8b8-9c5b-410b-a3ec-e8135e526ff5]: FINISHED
+[warn] !  Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\ambik\socmed\functions\node_modules\express\lib\application.js:482:19)
+    at Object.<anonymous> (C:\Users\ambik\socmed\functions\index.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:719:33
+[warn] !  We were unable to load your functions code. (see above)
+[debug] [2020-02-29T02:06:57.447Z] [worker-~diagnostic~-c6e00e3d-fcf0-47fe-94e9-4f74adb89d16]: exited
+[debug] [2020-02-29T02:06:57.447Z] [worker-~diagnostic~-c6e00e3d-fcf0-47fe-94e9-4f74adb89d16]: FINISHED
+[debug] [2020-02-29T02:06:58.846Z] File C:\Users\ambik\socmed\functions\handlers\screams.js changed, reloading triggers
+[debug] [2020-02-29T02:06:59.846Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 0
+[debug] [2020-02-29T02:06:59.851Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T02:06:59.851Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T02:06:59.851Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T02:06:59.851Z] [worker-~diagnostic~-b0968ef8-d6d5-4095-8a48-9ebbc1282385]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\38564
+[debug] [2020-02-29T02:06:59.851Z] [worker-~diagnostic~-b0968ef8-d6d5-4095-8a48-9ebbc1282385]: BUSY
+[debug] [2020-02-29T02:07:00.370Z] [runtime-status] [38564] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:07:00.372Z] [runtime-status] [38564] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:07:00.377Z] [runtime-status] [38564] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:07:00.380Z] [runtime-status] [38564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:07:00.381Z] [runtime-status] [38564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[api]: http function initialized (http://localhost:5001/socmed-d27e7/us-central1/api).
+[debug] [2020-02-29T02:07:01.515Z] [worker-~diagnostic~-b0968ef8-d6d5-4095-8a48-9ebbc1282385]: IDLE
+[debug] [2020-02-29T02:08:07.828Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T02:08:07.828Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T02:08:07.829Z] Accepted request POST /socmed-d27e7/us-central1/api/login --> api
+[debug] [2020-02-29T02:08:07.834Z] [worker-pool] addWorker(api)
+[debug] [2020-02-29T02:08:07.834Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-02-29T02:08:07.834Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T02:08:07.834Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\22064
+[debug] [2020-02-29T02:08:07.834Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: BUSY
+[debug] [2020-02-29T02:08:08.425Z] [runtime-status] [22064] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T02:08:08.427Z] [runtime-status] [22064] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T02:08:08.432Z] [runtime-status] [22064] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T02:08:08.434Z] [runtime-status] [22064] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:08:08.436Z] [runtime-status] [22064] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T02:08:09.563Z] [runtime-status] [22064] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T02:08:09.565Z] [runtime-status] [22064] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T02:08:09.565Z] [runtime-status] [22064] Running api in mode HTTPS
+[debug] [2020-02-29T02:08:09.571Z] [runtime-status] [22064] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\22064
+[debug] [2020-02-29T02:08:09.578Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T02:08:09.605Z] [runtime-status] [22064] Ephemeral server handling POST request
+[debug] [2020-02-29T02:08:09.638Z] [runtime-status] [22064] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-29T02:08:10.701Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: IDLE
+[debug] [2020-02-29T02:08:10.701Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-29T02:10:23.044Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T02:10:23.044Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T02:10:23.044Z] Accepted request POST /socmed-d27e7/us-central1/api/scream --> api
+[debug] [2020-02-29T02:10:23.044Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T02:10:23.045Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\22064
+[debug] [2020-02-29T02:10:23.045Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: BUSY
+[debug] [2020-02-29T02:10:23.046Z] [runtime-status] [22064] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T02:10:23.051Z] [runtime-status] [22064] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T02:10:23.051Z] [runtime-status] [22064] Running api in mode HTTPS
+[debug] [2020-02-29T02:10:23.051Z] [runtime-status] [22064] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\22064
+[debug] [2020-02-29T02:10:23.054Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T02:10:23.061Z] [runtime-status] [22064] Ephemeral server handling POST request
+[debug] [2020-02-29T02:10:23.065Z] [runtime-status] [22064] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-29T02:10:23.067Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: IDLE
+[debug] [2020-02-29T02:10:23.068Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-29T02:13:50.196Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T02:13:50.196Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T02:13:50.196Z] Accepted request POST /socmed-d27e7/us-central1/api/scream --> api
+[debug] [2020-02-29T02:13:50.197Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T02:13:50.197Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\22064
+[debug] [2020-02-29T02:13:50.197Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: BUSY
+[debug] [2020-02-29T02:13:50.197Z] [runtime-status] [22064] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T02:13:50.200Z] [runtime-status] [22064] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T02:13:50.201Z] [runtime-status] [22064] Running api in mode HTTPS
+[debug] [2020-02-29T02:13:50.201Z] [runtime-status] [22064] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\22064
+[debug] [2020-02-29T02:13:50.202Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T02:13:50.206Z] [runtime-status] [22064] Ephemeral server handling POST request
+[debug] [2020-02-29T02:13:50.208Z] [runtime-status] [22064] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-29T02:13:50.209Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: IDLE
+[debug] [2020-02-29T02:13:50.209Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-29T02:15:08.920Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T02:15:08.920Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T02:15:08.920Z] Accepted request POST /socmed-d27e7/us-central1/api/screams --> api
+[debug] [2020-02-29T02:15:08.920Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T02:15:08.920Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\22064
+[debug] [2020-02-29T02:15:08.921Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: BUSY
+[debug] [2020-02-29T02:15:08.921Z] [runtime-status] [22064] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T02:15:08.923Z] [runtime-status] [22064] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T02:15:08.923Z] [runtime-status] [22064] Running api in mode HTTPS
+[debug] [2020-02-29T02:15:08.924Z] [runtime-status] [22064] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\22064
+[debug] [2020-02-29T02:15:08.925Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T02:15:08.928Z] [runtime-status] [22064] Ephemeral server handling POST request
+[debug] [2020-02-29T02:15:08.998Z] [runtime-status] [22064] Ephemeral server survived.
+[info] >  {
+[info] >    iss: 'https://securetoken.google.com/socmed-d27e7',
+[info] >    aud: 'socmed-d27e7',
+[info] >    auth_time: 1582942092,
+[info] >    user_id: 'OVSK7JAd43beSUpF1DGpoGDFv192',
+[info] >    sub: 'OVSK7JAd43beSUpF1DGpoGDFv192',
+[info] >    iat: 1582942092,
+[info] >    exp: 1582945692,
+[info] >    email: 'abc@yahoo.com',
+[info] >    email_verified: false,
+[info] >    firebase: { identities: { email: [Array] }, sign_in_provider: 'password' },
+[info] >    uid: 'OVSK7JAd43beSUpF1DGpoGDFv192'
+[info] >  }
+[info] i  functions: Finished "api" in ~2s
+[debug] [2020-02-29T02:15:11.027Z] [worker-api-540b8ba1-82e2-42ac-9dec-94136a17739f]: IDLE
+[debug] [2020-02-29T02:15:11.027Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-29T06:54:31.534Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T06:54:31.537Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-29T06:54:31.537Z] CLI Version:   7.14.0
+[debug] [2020-02-29T06:54:31.537Z] Platform:      win32
+[debug] [2020-02-29T06:54:31.538Z] Node Version:  v12.5.0
+[debug] [2020-02-29T06:54:31.539Z] Time:          Sat Feb 29 2020 12:24:31 GMT+0530 (India Standard Time)
+[debug] [2020-02-29T06:54:31.539Z] ----------------------------------------------------------------------
+[debug] [2020-02-29T06:54:31.539Z] 
+[debug] [2020-02-29T06:54:31.643Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-29T06:54:31.644Z] > authorizing via signed-in user
+[debug] [2020-02-29T06:54:31.644Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-02-29T06:54:31.647Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-29T06:54:31.647Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-29T06:54:31.905Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T06:54:31.940Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+
+[debug] [2020-02-29T06:54:32.397Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-29T06:54:32.399Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-02-29T06:54:32.938Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-02-29T06:54:32.985Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-02-29T06:54:34.097Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-02-29T06:54:35.066Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-29T06:54:35.066Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-29T06:54:35.067Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-29T06:54:35.067Z] [worker-~diagnostic~-6597189c-dba1-4cb9-b84c-80276bf5e03f]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\13644
+[debug] [2020-02-29T06:54:35.067Z] [worker-~diagnostic~-6597189c-dba1-4cb9-b84c-80276bf5e03f]: BUSY
+[debug] [2020-02-29T06:54:35.586Z] [runtime-status] [13644] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T06:54:35.587Z] [runtime-status] [13644] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T06:54:35.591Z] [runtime-status] [13644] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T06:54:35.593Z] [runtime-status] [13644] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T06:54:35.594Z] [runtime-status] [13644] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[api]: http function initialized (http://localhost:5001/socmed-d27e7/us-central1/api).
+[debug] [2020-02-29T06:54:46.235Z] [worker-~diagnostic~-6597189c-dba1-4cb9-b84c-80276bf5e03f]: IDLE
+[debug] [2020-02-29T06:58:07.013Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T06:58:07.014Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T06:58:07.014Z] Accepted request POST /socmed-d27e7/us-central1/api/login --> api
+[debug] [2020-02-29T06:58:07.021Z] [worker-pool] addWorker(api)
+[debug] [2020-02-29T06:58:07.021Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-02-29T06:58:07.021Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T06:58:07.021Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T06:58:07.022Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: BUSY
+[debug] [2020-02-29T06:58:07.527Z] [runtime-status] [1860] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-02-29T06:58:07.529Z] [runtime-status] [1860] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-29T06:58:07.533Z] [runtime-status] [1860] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-02-29T06:58:07.535Z] [runtime-status] [1860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T06:58:07.536Z] [runtime-status] [1860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-02-29T06:58:08.590Z] [runtime-status] [1860] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T06:58:08.592Z] [runtime-status] [1860] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T06:58:08.592Z] [runtime-status] [1860] Running api in mode HTTPS
+[debug] [2020-02-29T06:58:08.597Z] [runtime-status] [1860] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T06:58:08.603Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T06:58:08.785Z] [runtime-status] [1860] Ephemeral server handling POST request
+[debug] [2020-02-29T06:58:08.819Z] [runtime-status] [1860] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-29T06:58:10.001Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: IDLE
+[debug] [2020-02-29T06:58:10.002Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-29T06:58:34.615Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T06:58:34.615Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T06:58:34.615Z] Accepted request POST /socmed-d27e7/us-central1/api/login --> api
+[debug] [2020-02-29T06:58:34.615Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T06:58:34.615Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T06:58:34.616Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: BUSY
+[debug] [2020-02-29T06:58:34.616Z] [runtime-status] [1860] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T06:58:34.617Z] [runtime-status] [1860] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T06:58:34.617Z] [runtime-status] [1860] Running api in mode HTTPS
+[debug] [2020-02-29T06:58:34.617Z] [runtime-status] [1860] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T06:58:34.620Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T06:58:34.625Z] [runtime-status] [1860] Ephemeral server handling POST request
+[debug] [2020-02-29T06:58:34.627Z] [runtime-status] [1860] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-29T06:58:34.628Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: IDLE
+[debug] [2020-02-29T06:58:34.628Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-29T06:59:36.412Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T06:59:36.413Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T06:59:36.413Z] Accepted request POST /socmed-d27e7/us-central1/api/login --> api
+[debug] [2020-02-29T06:59:36.413Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T06:59:36.413Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T06:59:36.413Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: BUSY
+[debug] [2020-02-29T06:59:36.414Z] [runtime-status] [1860] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T06:59:36.415Z] [runtime-status] [1860] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T06:59:36.415Z] [runtime-status] [1860] Running api in mode HTTPS
+[debug] [2020-02-29T06:59:36.415Z] [runtime-status] [1860] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T06:59:36.417Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T06:59:36.421Z] [runtime-status] [1860] Ephemeral server handling POST request
+[info] >  [M [Error]: The email address is badly formatted.] {
+[info] >    code: 'auth/invalid-email',
+[info] >    message: 'The email address is badly formatted.'
+[info] >  }
+[debug] [2020-02-29T06:59:36.428Z] [runtime-status] [1860] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-29T06:59:36.429Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: IDLE
+[debug] [2020-02-29T06:59:36.429Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-29T07:00:24.025Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T07:00:24.025Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T07:00:24.025Z] Accepted request POST /socmed-d27e7/us-central1/api/login --> api
+[debug] [2020-02-29T07:00:24.026Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T07:00:24.026Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T07:00:24.026Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: BUSY
+[debug] [2020-02-29T07:00:24.026Z] [runtime-status] [1860] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T07:00:24.027Z] [runtime-status] [1860] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T07:00:24.027Z] [runtime-status] [1860] Running api in mode HTTPS
+[debug] [2020-02-29T07:00:24.028Z] [runtime-status] [1860] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T07:00:24.029Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T07:00:24.034Z] [runtime-status] [1860] Ephemeral server handling POST request
+[debug] [2020-02-29T07:00:24.037Z] [runtime-status] [1860] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-02-29T07:00:25.063Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: IDLE
+[debug] [2020-02-29T07:00:25.064Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-29T07:02:26.978Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T07:02:26.978Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T07:02:26.978Z] Accepted request POST /socmed-d27e7/us-central1/api/signup --> api
+[debug] [2020-02-29T07:02:26.979Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T07:02:26.979Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T07:02:26.979Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: BUSY
+[debug] [2020-02-29T07:02:26.979Z] [runtime-status] [1860] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T07:02:26.981Z] [runtime-status] [1860] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T07:02:26.981Z] [runtime-status] [1860] Running api in mode HTTPS
+[debug] [2020-02-29T07:02:26.981Z] [runtime-status] [1860] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T07:02:26.982Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T07:02:26.985Z] [runtime-status] [1860] Ephemeral server handling POST request
+[debug] [2020-02-29T07:02:26.988Z] [runtime-status] [1860] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~3s
+[debug] [2020-02-29T07:02:30.814Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: IDLE
+[debug] [2020-02-29T07:02:30.815Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-02-29T07:03:25.414Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-02-29T07:03:25.414Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-02-29T07:03:25.414Z] Accepted request POST /socmed-d27e7/us-central1/api/login --> api
+[debug] [2020-02-29T07:03:25.414Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-02-29T07:03:25.414Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T07:03:25.414Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: BUSY
+[debug] [2020-02-29T07:03:25.415Z] [runtime-status] [1860] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-02-29T07:03:25.417Z] [runtime-status] [1860] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-02-29T07:03:25.417Z] [runtime-status] [1860] Running api in mode HTTPS
+[debug] [2020-02-29T07:03:25.417Z] [runtime-status] [1860] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\1860
+[debug] [2020-02-29T07:03:25.418Z] [functions] Runtime ready! Sending request!
+[debug] [2020-02-29T07:03:25.421Z] [runtime-status] [1860] Ephemeral server handling POST request
+[debug] [2020-02-29T07:03:25.423Z] [runtime-status] [1860] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~2s
+[debug] [2020-02-29T07:03:27.923Z] [worker-api-e7b5610d-d8c9-4595-9688-c2f7d1f4a609]: IDLE
+[debug] [2020-02-29T07:03:27.923Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T11:18:22.382Z] ----------------------------------------------------------------------
+[debug] [2020-03-06T11:18:22.385Z] Command:       C:\node.exe C:\Users\ambik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-03-06T11:18:22.386Z] CLI Version:   7.14.0
+[debug] [2020-03-06T11:18:22.386Z] Platform:      win32
+[debug] [2020-03-06T11:18:22.386Z] Node Version:  v12.5.0
+[debug] [2020-03-06T11:18:22.387Z] Time:          Fri Mar 06 2020 16:48:22 GMT+0530 (India Standard Time)
+[debug] [2020-03-06T11:18:22.387Z] ----------------------------------------------------------------------
+[debug] [2020-03-06T11:18:22.387Z] 
+[debug] [2020-03-06T11:18:22.549Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-06T11:18:22.550Z] > authorizing via signed-in user
+[debug] [2020-03-06T11:18:22.550Z] [iam] checking project socmed-d27e7 for permissions ["firebase.projects.get"]
+[debug] [2020-03-06T11:18:22.552Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-06T11:18:22.553Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-06T11:18:22.905Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-06T11:18:22.962Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/socmed-d27e7:testIamPermissions  
+
+[debug] [2020-03-06T11:18:24.775Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-06T11:18:24.777Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7  
+ 
+[debug] [2020-03-06T11:18:25.525Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\ambik\socmed'...
+[info] 
+[debug] [2020-03-06T11:18:25.533Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/socmed-d27e7/webApps/-/config  
+ 
+[debug] [2020-03-06T11:18:26.674Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: yes
+[info] +  hosting: Local server: http://localhost:5000
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\ambik\socmed\functions" for Cloud Functions...
+[debug] [2020-03-06T11:18:27.730Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-06T11:18:27.730Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-06T11:18:27.730Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-06T11:18:27.731Z] [worker-~diagnostic~-fea17418-451d-4fc8-bbee-20f76451ece7]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\23392
+[debug] [2020-03-06T11:18:27.731Z] [worker-~diagnostic~-fea17418-451d-4fc8-bbee-20f76451ece7]: BUSY
+[debug] [2020-03-06T11:18:28.865Z] [runtime-status] [23392] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-03-06T11:18:28.866Z] [runtime-status] [23392] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-06T11:18:29.158Z] [runtime-status] [23392] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-06T11:18:29.265Z] [runtime-status] [23392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-06T11:18:29.267Z] [runtime-status] [23392] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] +  functions[api]: http function initialized (http://localhost:5001/socmed-d27e7/us-central1/api).
+[debug] [2020-03-06T11:19:17.856Z] [worker-~diagnostic~-fea17418-451d-4fc8-bbee-20f76451ece7]: IDLE
+[debug] [2020-03-06T11:20:51.669Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T11:20:51.669Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T11:20:51.670Z] Accepted request GET /socmed-d27e7/us-central1/api/like --> api
+[debug] [2020-03-06T11:20:51.795Z] [worker-pool] addWorker(api)
+[debug] [2020-03-06T11:20:51.795Z] [worker-pool] Adding worker with key api, total=1
+[debug] [2020-03-06T11:20:51.795Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T11:20:51.795Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\26288
+[debug] [2020-03-06T11:20:51.795Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: BUSY
+[debug] [2020-03-06T11:20:56.536Z] [runtime-status] [26288] Functions runtime initialized. {"cwd":"C:\\Users\\ambik\\socmed\\functions","node_version":"12.5.0"}
+[debug] [2020-03-06T11:20:56.538Z] [runtime-status] [26288] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-06T11:20:56.559Z] [runtime-status] [26288] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-06T11:20:56.570Z] [runtime-status] [26288] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-06T11:20:56.572Z] [runtime-status] [26288] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\ambik\\socmed\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-06T11:21:05.814Z] [runtime-status] [26288] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T11:21:05.815Z] [runtime-status] [26288] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T11:21:05.816Z] [runtime-status] [26288] Running api in mode HTTPS
+[debug] [2020-03-06T11:21:05.821Z] [runtime-status] [26288] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\26288
+[debug] [2020-03-06T11:21:05.852Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T11:21:05.866Z] [runtime-status] [26288] Ephemeral server handling GET request
+[debug] [2020-03-06T11:21:05.881Z] [runtime-status] [26288] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T11:21:05.883Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: IDLE
+[debug] [2020-03-06T11:21:05.883Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T11:51:00.055Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T11:51:00.055Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T11:51:00.056Z] Accepted request POST /socmed-d27e7/us-central1/api/login --> api
+[debug] [2020-03-06T11:51:00.056Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T11:51:00.056Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\26288
+[debug] [2020-03-06T11:51:00.056Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: BUSY
+[debug] [2020-03-06T11:51:00.059Z] [runtime-status] [26288] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T11:51:00.061Z] [runtime-status] [26288] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T11:51:00.061Z] [runtime-status] [26288] Running api in mode HTTPS
+[debug] [2020-03-06T11:51:00.061Z] [runtime-status] [26288] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\26288
+[debug] [2020-03-06T11:51:00.063Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T11:51:00.366Z] [runtime-status] [26288] Ephemeral server handling POST request
+[debug] [2020-03-06T11:51:00.399Z] [runtime-status] [26288] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T11:51:01.493Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: IDLE
+[debug] [2020-03-06T11:51:01.494Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T11:53:19.526Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-06T11:53:19.526Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-06T11:53:19.526Z] Accepted request GET /socmed-d27e7/us-central1/api/like --> api
+[debug] [2020-03-06T11:53:19.527Z] [worker-pool] submitWork(triggerId=api)
+[debug] [2020-03-06T11:53:19.528Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: Assigning socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\26288
+[debug] [2020-03-06T11:53:19.528Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: BUSY
+[debug] [2020-03-06T11:53:19.528Z] [runtime-status] [26288] Trigger "api" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "api"
+[debug] [2020-03-06T11:53:19.529Z] [runtime-status] [26288] triggerDefinition {"httpsTrigger":{},"name":"api","entryPoint":"api"}
+[debug] [2020-03-06T11:53:19.530Z] [runtime-status] [26288] Running api in mode HTTPS
+[debug] [2020-03-06T11:53:19.530Z] [runtime-status] [26288] Attempting to listen to socketPath: \\?\pipe\C:\Users\ambik\socmed\functions\26288
+[debug] [2020-03-06T11:53:19.531Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-06T11:53:19.535Z] [runtime-status] [26288] Ephemeral server handling GET request
+[debug] [2020-03-06T11:53:19.536Z] [runtime-status] [26288] Ephemeral server survived.
+[info] i  functions: Finished "api" in ~1s
+[debug] [2020-03-06T11:53:19.537Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: IDLE
+[debug] [2020-03-06T11:53:19.537Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-06T11:53:52.382Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: exited
+[debug] [2020-03-06T11:53:52.382Z] [worker-api-21803f95-7712-4ac2-a891-f7d8394076cb]: FINISHED
